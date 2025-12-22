@@ -1,0 +1,19 @@
+# Environment & secrets
+.env
+config.php
+
+# Uploads & cache
+uploads/
+cache/
+tmp/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+*.swp

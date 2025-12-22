@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Opening</title>
+    <link rel="stylesheet" href="css/form_styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Agriculture - Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-success text-white">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Bank of Agriculture Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="create_account.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h2>Create Account</h2>
+
+        <!-- Error and Success Message Area -->
+        <div id="message" class="message"></div>
+
+        <form id="accountForm" enctype="multipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required><br>
+
+            <label for="nationalID">National ID No(NIN):</label>
+            <input type="text" id="nationalID" name="nationalID" required><br>
+
+            <label for="passport">Passport (150x150, max 100KB):</label>
+            <input type="file" id="passport" name="passport" accept="image/*"><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Create Account</button>
+        </form>
+        <!-- Error and Success Message Area -->
+        <div id="message" class="message"></div>
+    </div>
+    <script src="js/create_account_script.js"></script>
+</body>
+</html>

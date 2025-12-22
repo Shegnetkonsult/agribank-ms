@@ -1,0 +1,35 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header .logo {
+    height: 50px;
+}
+
+.hero {
+    height: 60vh;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background: #004d00;
+    color: white;
+}
+
+
+
